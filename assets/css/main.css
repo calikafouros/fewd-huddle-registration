@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -9,22 +9,51 @@ html, body {
   color: white
 }
 
-main {
+body {
   background-image: url('/images/bg-mobile.svg');
   background-color: hsl(257, 40%, 49%);
-  padding: 50px;
   background-repeat: no-repeat;
   background-size: contain;
-  heigh: 100vh;
+  height: 100vh;
+
 }
 
-h1 {
+main {
+  padding: 50px;
+  height: 100%;
+}
+
+h1, button {
   font-family: 'poppins', sans-serif;
   font-weight: 400;
 }
 
 #left header img {
   max-width: 50%;
+}
+
+button {
+  background-color: #fff;
+  padding: 10px 75px;
+  font-size: 14px;
+  color: hsl(257, 40%, 49%);
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  display: inline-block;
+}
+
+ion-icon {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 #left .product-image img {
@@ -38,4 +67,39 @@ img{
 #right {
   text-align: center;
   line-height: 1.7
+}
+
+footer {
+  margin: 50px 0 20px 0;
+}
+
+@media (min-width: 1000px) {
+
+  body {
+background-image: url('/images/bg-desktop.svg');
+display: flex;
+align-items:
+  }
+
+main{
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#left {
+  width: 65%;
+}
+
+#right {
+  width: 35%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
 }
